@@ -1,0 +1,429 @@
+$Fondo: #FFFFFF;
+$TextoPrincipal: #111111;
+$Textosecundario: #555555;
+$TarjetasSecciones: #F5F5F5;
+$botonesLinks: #007BFF;
+$FuentePequeña: 3.6rem;
+$FuenteMEdiana: 4rem;
+$FuenteGrande: 4.8rem;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: $Fondo;
+    font-family: sans-serif;
+    header{
+        display: flex;
+        // z-index: 2;
+        // padding: 20px 24px;
+        width: 100%;
+        animation-name: desplazar;
+        animation-duration: 2s;
+    }
+    @keyframes desplazar {
+        0%{
+            transform: translate(0, -80px)
+        }
+        100%{
+            transform: translate(0,0);
+        }
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 8rem;
+        align-items: center;
+        width: 100%;
+        padding: 24px;
+        .logo{
+            h1{
+                font-size: 48px;
+            }
+        }
+        .navbar-list{
+            display: none;
+            gap: 16px;
+            list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $TextoPrincipal;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .modo-oscuro-claro{
+                    // display: inline-block;
+                    display: none;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url("../assets/icons/moon.svg");
+                    background-size: cover;
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.2);
+                        transition: transform;
+                        transition-duration: 1s;
+                        
+                        }
+                }
+        } 
+        .menu-hamburguesa-icon{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url("../assets/icons/menu-hamburguesa.svg");
+            background-size: cover;
+        }
+        .menu-hamburguesa{
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 72px;
+            width: 150px;
+            height: auto;
+            padding: 20px 0;
+            justify-items: center;
+            background-color: $Fondo;
+            border: 1px solid black;
+            border-radius: 12px;
+            gap: 16px;
+            list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $TextoPrincipal;
+                }    
+        }
+    }
+}
+    main{
+        // z-index: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+        animation-name: aparecer;
+            animation-duration: 2s;
+            @keyframes aparecer {
+                0%{
+                    transform: translate(0, 50px);
+                    opacity: 0;
+                }
+                100%{
+                    transform: translate(0, 0);
+                    opacity: 1;
+                }
+            }
+        .hero{
+            width: 100%;
+            padding: 24px;
+            font-size: 8rem;
+            
+            .imagen-perfil{
+                max-width: 250px;
+                min-width: 150px;
+                max-height: 250px;
+                min-height: 150px;
+                margin: 0 auto 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .hero-body{
+                width: 300px;
+                height: 300px;
+                line-height: 52px;
+                p{
+                    margin-bottom: 20px;
+                }
+                .botones{
+                    display: flex;
+                    gap: 20px;
+                    width: 100%;
+                    button{
+                        display: none;
+                        border: none;
+                        max-width: 152px;
+                        min-width: 120px;
+                        font-size: 1.6rem;
+                        height: 60px;
+                        border-radius: 12px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .boton-azul{
+                        display: none;
+                        background-color: $botonesLinks;
+                        color: $Fondo;
+                        &:hover{
+                            background-color: #004ea1;
+                        }
+                    }
+                    .boton-blanco{
+                        background-color: $Fondo;
+                        color: $Textosecundario;
+                        border: 1px solid $Textosecundario;
+                        &:hover{
+                            background-color: $Textosecundario;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+        #proyectos{
+            width: 100%;
+            height: auto;
+            padding: 0 24px;
+            margin-bottom: 20px;
+            h3{
+                height: auto;
+                font-size: $FuentePequeña;
+            }
+            .proyectos-cards-container{
+                display: grid;
+                grid-template-rows: minmax(430px, 2fr);
+                gap: 32px;
+                justify-items: center;
+                margin-top: 40px;
+                .card-proyecto{
+                    max-width: 100%;
+                    min-width: 220px;
+                    height: auto;
+                    min-height: 500px;
+                    border: 1px solid #bdbdbd;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 40%;
+                        object-fit: cover;
+                    }
+                    .card-body{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 60%;
+                        padding: 20px;
+                            h4{ 
+                                display: inline-block;
+                                height: 20%;
+                                font-size: 2.4rem;
+                            }
+                            p{
+                                display: inline-block;
+                                height: 60%;
+                                font-size: 1.6rem;
+                                margin-bottom: 20px;
+                            }
+                            a{
+                                display: inline-block;
+                                width: 136px;
+                                height: 32px;
+                                align-self: center;
+                                align-content: center;
+                                text-align: center;
+                                background-color: $botonesLinks;
+                                border: none;
+                                border-radius: 12px;
+                                color: white;
+                                font-size: 1.6rem;
+                                text-decoration: none;
+                                &:hover{
+                                    background-color: #004ea1;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+        #sobre-mi{
+            padding: 0 24px;
+            margin-bottom: 20px;
+            .text-container{
+                h4{
+                    font-size: $FuentePequeña;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 1.6rem;
+                    margin-bottom: 20px;
+                }
+            }
+            .tecnologías-container{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+                .html{
+                    display: inline-block;
+                    background-image: url("../assets/icons/html5-01-svgrepo-com.svg");
+                    background-size: cover;
+                    width: 100px;
+                    height: 100px;
+                    &:hover{
+                        animation-name: movimiento;
+                        animation-duration: 1s;
+                    }
+                }
+                .css{
+                    display: inline-block;
+                    background-image: url("../assets/icons/css3-01-svgrepo-com.svg");
+                    background-size: cover;
+                    width: 100px;
+                    height: 100px;
+                    &:hover{
+                        animation-name: movimiento;
+                        animation-duration: 1s;
+                    }
+                }
+                .javascript{
+                    display: inline-block;
+                    background-image: url("../assets/icons/javascript-155-svgrepo-com.svg");
+                    background-size: cover;
+                    width: 100px;
+                    height: 100px;
+                    &:hover{
+                        animation-name: movimiento;
+                        animation-duration: 1s;
+                    }
+                }
+                .sass{
+                    display: inline-block;
+                    background-image: url("../assets/icons/sass-svgrepo-com.svg");
+                    background-size: cover;
+                    width: 100px;
+                    height: 100px;
+                    &:hover{
+                        animation-name: movimiento;
+                        animation-duration: 1s;
+                    }
+                }
+                @keyframes movimiento{
+                    0%{
+                        transform: scale(1);
+                    }
+                    50%{
+                        transform: scale(1.1);
+                    }
+                    100%{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        #contacto{
+            padding: 0 24px;
+            margin-bottom: 20px;
+            h4{
+                font-size: $FuentePequeña;
+                margin-bottom: 20px;
+            }
+            .linkedin{
+                display: inline-block;
+                background-image: url("../assets/icons/linkedin-svgrepo-com.svg");
+                background-size: cover;
+                width: 100px;
+                height: 100px;
+                margin-right: 32px;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: transform;
+                    transition-duration: 1s;
+                }
+            }
+            .github{
+               display: inline-block;
+                background-image: url("../assets/icons/github-142-svgrepo-com.svg");
+                background-size: cover;
+                width: 100px;
+                height: 100px;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: transform;
+                    transition-duration: 1s;
+                } 
+            }
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            padding: 0 24px;
+            font-size: $FuenteMEdiana;
+        }
+    }
+
+@media(min-width:700px){
+
+    body{
+        header{
+            padding: 20px 0;
+        nav{
+            .navbar-list{
+                display: flex;
+            } 
+            .menu-hamburguesa-icon{
+                display: none;
+            }
+            .menu-hamburguesa{
+                display: none;
+            }
+        }
+    }
+        main{
+            .hero{
+                display: flex;
+                justify-content: center;
+                gap: 80px;
+                .imagen-perfil{
+                margin: 0;
+                }
+            }
+            #proyectos{
+                .proyectos-cards-container{
+                    grid-template-columns: repeat(2, 1fr);
+                    justify-content: center;
+                    gap: 24px;
+                    margin: 20px auto;
+                }
+            }
+        }
+    }
+}
+@media(min-width:1000px){
+    
+    body{
+        header{
+            nav{
+                min-width: 1000px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        }
+        main{
+            #proyectos{
+                .proyectos-cards-container{
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-content: center;
+                    gap: 24px;
+                }
+            }
+        }
+    }
+
+}
+
+
