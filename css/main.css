@@ -317,6 +317,53 @@ main #contacto h4 {
   font-size: 3.6rem;
   margin-bottom: 20px;
 }
+main #contacto .formulario-contacto {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+main #contacto .formulario-contacto .inputs-nombre-correo {
+  display: flex;
+  gap: 8px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main #contacto .formulario-contacto .inputs-nombre-correo #name, main #contacto .formulario-contacto .inputs-nombre-correo #email {
+  width: 50%;
+  height: 50px;
+  border: 1px solid #555555;
+  border-radius: 12px;
+  padding: 12px;
+}
+main #contacto .formulario-contacto .input-mensaje {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+main #contacto .formulario-contacto .input-mensaje #message {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #555555;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+main #contacto .formulario-contacto .input-mensaje button {
+  width: 100px;
+  height: 50px;
+  background-color: #111111;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+}
+main #contacto .formulario-contacto .input-mensaje button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform;
+  transition-duration: 1s;
+}
 main #contacto .linkedin {
   display: inline-block;
   background-image: url("../assets/icons/linkedin-svgrepo-com.svg");

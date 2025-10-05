@@ -329,6 +329,57 @@ body{
                 font-size: $FuentePequeña;
                 margin-bottom: 20px;
             }
+            .formulario-contacto{
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+                .inputs-nombre-correo{
+                    display: flex;
+                    gap: 8px;
+                    font-size: 2.4rem;
+                    font-weight: bold;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    #name{
+                        width: 50%;
+                        height: 50px;
+                        border: 1px solid $Textosecundario;
+                        border-radius: 12px;
+                        padding: 12px;
+                    }
+                    #email{
+                        @extend #name
+                    }
+                }
+                .input-mensaje{
+                    font-size: 2.4rem;
+                    font-weight: bold;
+                    #message{
+                        width: 100%;
+                        height: 200px;
+                        border: 1px solid $Textosecundario;
+                        border-radius: 12px;
+                        margin-bottom: 20px;
+                        padding: 12px;
+                    }
+                    button{
+                        width: 100px;
+                        height: 50px;
+                        background-color: $TextoPrincipal;
+                        color: $Fondo;
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 12px;
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.1);
+                            transition: transform;
+                            transition-duration: 1s;
+                        }
+                    }
+                }
+                
+            }
             .linkedin{
                 display: inline-block;
                 background-image: url("../assets/icons/linkedin-svgrepo-com.svg");
