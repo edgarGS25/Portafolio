@@ -125,7 +125,8 @@ main .hero .imagen-perfil {
 main .hero .imagen-perfil img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .hero .hero-body {
   width: 300px;
@@ -198,7 +199,8 @@ main #proyectos .proyectos-cards-container .card-proyecto {
 main #proyectos .proyectos-cards-container .card-proyecto img {
   width: 100%;
   height: 40%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #proyectos .proyectos-cards-container .card-proyecto .card-body {
   display: flex;
@@ -389,6 +391,4 @@ main footer {
     justify-content: center;
     gap: 24px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
