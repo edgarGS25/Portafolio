@@ -20,12 +20,17 @@ body{
     background-color: $Fondo;
     font-family: sans-serif;
     header{
+        position: fixed;
+        z-index: 2;
         display: flex;
-        // z-index: 2;
-        // padding: 20px 24px;
         width: 100%;
+        height: 100px;
         animation-name: desplazar;
         animation-duration: 2s;
+        background-color: $Fondo;
+        box-shadow: 1px 6px 30px 0px rgba(0,0,0,0.38);
+        -webkit-box-shadow: 1px 6px 30px 0px rgba(0,0,0,0.38);
+        -moz-box-shadow: 1px 6px 30px 0px rgba(0,0,0,0.38);
     }
     @keyframes desplazar {
         0%{
@@ -43,6 +48,7 @@ body{
         font-size: 8rem;
         align-items: center;
         width: 100%;
+        height: 100%;
         padding: 24px;
         .logo{
             h1{
@@ -105,7 +111,9 @@ body{
     }
 }
     main{
-        // z-index: 1;
+        z-index: 1;
+        position: relative;
+        top: 150px;
         max-width: 1200px;
         margin: 0 auto;
         animation-name: aparecer;
@@ -193,42 +201,46 @@ body{
             }
             .proyectos-cards-container{
                 display: grid;
-                grid-template-rows: minmax(430px, 2fr);
+                grid-template-columns: 1fr;
                 gap: 32px;
                 justify-items: center;
                 margin-top: 40px;
                 .card-proyecto{
-                    max-width: 100%;
+                    position: relative;
+                    width: 100%;
                     min-width: 220px;
                     height: auto;
-                    min-height: 500px;
                     border: 1px solid #bdbdbd;
                     border-radius: 12px;
                     overflow: hidden;
                     img{
                         width: 100%;
-                        height: 40%;
+                        height: 280px;
                         object-fit: cover;
                     }
                     .card-body{
                         display: flex;
                         flex-direction: column;
+                        gap: 20px;
+                        position: relative;
                         width: 100%;
-                        height: 60%;
+                        height: auto;
+                        min-height: 280px;
                         padding: 20px;
                             h4{ 
                                 display: inline-block;
-                                height: 20%;
                                 font-size: 2.4rem;
+                                align-content: center;
                             }
                             p{
                                 display: inline-block;
-                                height: 60%;
                                 font-size: 1.6rem;
-                                margin-bottom: 20px;
+                                height: auto;
                             }
                             a{
                                 display: inline-block;
+                                position: absolute;
+                                bottom: 20px;
                                 width: 136px;
                                 height: 32px;
                                 align-self: center;

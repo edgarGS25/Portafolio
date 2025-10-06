@@ -15,10 +15,17 @@ body {
   font-family: sans-serif;
 }
 body header {
+  position: fixed;
+  z-index: 2;
   display: flex;
   width: 100%;
+  height: 100px;
   animation-name: desplazar;
   animation-duration: 2s;
+  background-color: #FFFFFF;
+  box-shadow: 1px 6px 30px 0px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 1px 6px 30px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 1px 6px 30px 0px rgba(0, 0, 0, 0.38);
 }
 @keyframes desplazar {
   0% {
@@ -35,6 +42,7 @@ body nav {
   font-size: 8rem;
   align-items: center;
   width: 100%;
+  height: 100%;
   padding: 24px;
 }
 body nav .logo h1 {
@@ -93,6 +101,9 @@ body nav .menu-hamburguesa a {
 }
 
 main {
+  z-index: 1;
+  position: relative;
+  top: 150px;
   max-width: 1200px;
   margin: 0 auto;
   animation-name: aparecer;
@@ -182,46 +193,50 @@ main #proyectos h3 {
 }
 main #proyectos .proyectos-cards-container {
   display: grid;
-  grid-template-rows: minmax(430px, 2fr);
+  grid-template-columns: 1fr;
   gap: 32px;
   justify-items: center;
   margin-top: 40px;
 }
 main #proyectos .proyectos-cards-container .card-proyecto {
-  max-width: 100%;
+  position: relative;
+  width: 100%;
   min-width: 220px;
   height: auto;
-  min-height: 500px;
   border: 1px solid #bdbdbd;
   border-radius: 12px;
   overflow: hidden;
 }
 main #proyectos .proyectos-cards-container .card-proyecto img {
   width: 100%;
-  height: 40%;
+  height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 main #proyectos .proyectos-cards-container .card-proyecto .card-body {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  position: relative;
   width: 100%;
-  height: 60%;
+  height: auto;
+  min-height: 280px;
   padding: 20px;
 }
 main #proyectos .proyectos-cards-container .card-proyecto .card-body h4 {
   display: inline-block;
-  height: 20%;
   font-size: 2.4rem;
+  align-content: center;
 }
 main #proyectos .proyectos-cards-container .card-proyecto .card-body p {
   display: inline-block;
-  height: 60%;
   font-size: 1.6rem;
-  margin-bottom: 20px;
+  height: auto;
 }
 main #proyectos .proyectos-cards-container .card-proyecto .card-body a {
   display: inline-block;
+  position: absolute;
+  bottom: 20px;
   width: 136px;
   height: 32px;
   align-self: center;
