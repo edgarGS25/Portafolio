@@ -289,37 +289,20 @@ body{
                     }
                 }
                 .css{
-                    display: inline-block;
                     background-image: url("../assets/icons/css3-01-svgrepo-com.svg");
-                    background-size: cover;
-                    width: 100px;
-                    height: 100px;
-                    &:hover{
-                        animation-name: movimiento;
-                        animation-duration: 1s;
-                    }
+                    @extend .html
                 }
                 .javascript{
-                    display: inline-block;
                     background-image: url("../assets/icons/javascript-155-svgrepo-com.svg");
-                    background-size: cover;
-                    width: 100px;
-                    height: 100px;
-                    &:hover{
-                        animation-name: movimiento;
-                        animation-duration: 1s;
-                    }
+                    @extend .html
                 }
                 .sass{
-                    display: inline-block;
                     background-image: url("../assets/icons/sass-svgrepo-com.svg");
-                    background-size: cover;
-                    width: 100px;
-                    height: 100px;
-                    &:hover{
-                        animation-name: movimiento;
-                        animation-duration: 1s;
-                    }
+                    @extend .html
+                }
+                .tailwind{
+                    background-image: url("../assets/icons/tailwindcss-svgrepo-com.svg");
+                    @extend .html
                 }
                 @keyframes movimiento{
                     0%{
@@ -332,6 +315,37 @@ body{
                         transform: scale(1);
                     }
                 }
+            }
+            .tools-section{
+                margin-top: 20px;
+                h4{
+                    font-size: $FuentePequeña;
+                    margin-bottom: 20px;
+                }
+                .tools-icons{
+                    .vscode{
+                        display: inline-block;
+                        background-image: url("../assets/icons/visual-studio-code-svgrepo-com.svg");
+                        background-size: cover;
+                        width: 100px;
+                        height: 100px;
+                        &:hover{
+                            animation-name: movimiento;
+                            animation-duration: 1s;
+                        }
+                    }
+                    .git{
+                        background-image: url("../assets/icons/git-svgrepo-com.svg");
+                        @extend .vscode
+                    }
+                    .github{
+                        background-image: url("../assets/icons/github-142-svgrepo-com.svg");
+                        @extend .vscode
+                    }
+                    @extend .tecnologías-container
+                }
+                
+                
             }
         }
         #contacto{

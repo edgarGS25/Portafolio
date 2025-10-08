@@ -264,54 +264,33 @@ main #sobre-mi .text-container p {
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
-main #sobre-mi .tecnologías-container {
+main #sobre-mi .tecnologías-container, main #sobre-mi .tools-section .tools-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
-main #sobre-mi .tecnologías-container .html {
+main #sobre-mi .tecnologías-container .html, main #sobre-mi .tools-section .tools-icons .html, main #sobre-mi .tecnologías-container .tailwind, main #sobre-mi .tools-section .tools-icons .tailwind, main #sobre-mi .tecnologías-container .sass, main #sobre-mi .tools-section .tools-icons .sass, main #sobre-mi .tecnologías-container .javascript, main #sobre-mi .tools-section .tools-icons .javascript, main #sobre-mi .tecnologías-container .css, main #sobre-mi .tools-section .tools-icons .css {
   display: inline-block;
   background-image: url("../assets/icons/html5-01-svgrepo-com.svg");
   background-size: cover;
   width: 100px;
   height: 100px;
 }
-main #sobre-mi .tecnologías-container .html:hover {
+main #sobre-mi .tecnologías-container .html:hover, main #sobre-mi .tools-section .tools-icons .html:hover, main #sobre-mi .tecnologías-container .tailwind:hover, main #sobre-mi .tools-section .tools-icons .tailwind:hover, main #sobre-mi .tecnologías-container .sass:hover, main #sobre-mi .tools-section .tools-icons .sass:hover, main #sobre-mi .tecnologías-container .javascript:hover, main #sobre-mi .tools-section .tools-icons .javascript:hover, main #sobre-mi .tecnologías-container .css:hover, main #sobre-mi .tools-section .tools-icons .css:hover {
   animation-name: movimiento;
   animation-duration: 1s;
 }
-main #sobre-mi .tecnologías-container .css {
-  display: inline-block;
+main #sobre-mi .tecnologías-container .css, main #sobre-mi .tools-section .tools-icons .css {
   background-image: url("../assets/icons/css3-01-svgrepo-com.svg");
-  background-size: cover;
-  width: 100px;
-  height: 100px;
 }
-main #sobre-mi .tecnologías-container .css:hover {
-  animation-name: movimiento;
-  animation-duration: 1s;
-}
-main #sobre-mi .tecnologías-container .javascript {
-  display: inline-block;
+main #sobre-mi .tecnologías-container .javascript, main #sobre-mi .tools-section .tools-icons .javascript {
   background-image: url("../assets/icons/javascript-155-svgrepo-com.svg");
-  background-size: cover;
-  width: 100px;
-  height: 100px;
 }
-main #sobre-mi .tecnologías-container .javascript:hover {
-  animation-name: movimiento;
-  animation-duration: 1s;
-}
-main #sobre-mi .tecnologías-container .sass {
-  display: inline-block;
+main #sobre-mi .tecnologías-container .sass, main #sobre-mi .tools-section .tools-icons .sass {
   background-image: url("../assets/icons/sass-svgrepo-com.svg");
-  background-size: cover;
-  width: 100px;
-  height: 100px;
 }
-main #sobre-mi .tecnologías-container .sass:hover {
-  animation-name: movimiento;
-  animation-duration: 1s;
+main #sobre-mi .tecnologías-container .tailwind, main #sobre-mi .tools-section .tools-icons .tailwind {
+  background-image: url("../assets/icons/tailwindcss-svgrepo-com.svg");
 }
 @keyframes movimiento {
   0% {
@@ -323,6 +302,30 @@ main #sobre-mi .tecnologías-container .sass:hover {
   100% {
     transform: scale(1);
   }
+}
+main #sobre-mi .tools-section {
+  margin-top: 20px;
+}
+main #sobre-mi .tools-section h4 {
+  font-size: 3.6rem;
+  margin-bottom: 20px;
+}
+main #sobre-mi .tools-section .tools-icons .vscode, main #sobre-mi .tools-section .tools-icons .github, main #sobre-mi .tools-section .tools-icons .git {
+  display: inline-block;
+  background-image: url("../assets/icons/visual-studio-code-svgrepo-com.svg");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+main #sobre-mi .tools-section .tools-icons .vscode:hover, main #sobre-mi .tools-section .tools-icons .github:hover, main #sobre-mi .tools-section .tools-icons .git:hover {
+  animation-name: movimiento;
+  animation-duration: 1s;
+}
+main #sobre-mi .tools-section .tools-icons .git {
+  background-image: url("../assets/icons/git-svgrepo-com.svg");
+}
+main #sobre-mi .tools-section .tools-icons .github {
+  background-image: url("../assets/icons/github-142-svgrepo-com.svg");
 }
 main #contacto {
   padding: 0 24px;
