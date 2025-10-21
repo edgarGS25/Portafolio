@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+        "id": 1,
+        "name": "Landing Page Batabit",
+        "image": ["./assets/Proyectos/Batabit/Desktop.png", "./assets/Proyectos/Batabit/Desktop-2.png", "./assets/Proyectos/Batabit/Desktop-3.png"],
+        "imageMobile":["./assets/Proyectos/Batabit/Mobile.png", "./assets/Proyectos/Batabit/Mobile-2.png", "./assets/Proyectos/Batabit/Mobile-3.png"],
+        "description": ["Batabit es una aplicación web diseñada para ayudar a los usuarios a navegar entre los diferentes precios y tendencias de criptomonedas. La plataforma visualiza todas las tasas de cambio y trae información de las casas de cambio y las monedas más importantes del mundo. Lo que se puso en práctica en este proyecto fue la implementación de un diseño responsivo y una experiencia de usuario intuitiva, utilizando la metodología mobile-first.", "Después cuando aprendí algo de JavaScript, agregué escuchadores de eventos para la sección de monedas y planes, que en la versión Mobile se muestran como carrusel, al momento de crear el proyecto se le agregó la funcionalidad de hacer scroll horizontal, entonces yo agruegé unos iconos de flechas y con los eventos agregados en JavaScript y con ayuda de GitHub Copilot, programé los íconos para que hicieran scroll a la derecha o a la izquierda."],
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "repository": "https://github.com/edgarGS25/Batabit",
+        "live_demo": "https://edgargs25.github.io/Batabit/"
+        },
+        {
+        "id": 2,
+        "name": "Eco Store",
+        "image": ["./assets/Proyectos/Eco_Store/Eco-Store-Desktop.png", "./assets/Proyectos/Eco_Store/Wishlist-Desktop.png", "./assets/Proyectos/Eco_Store/Cart-Desktop.png"],
+        "imageMobile":["./assets/Proyectos/Eco_Store/Home-Mobile.png", "./assets/Proyectos/Eco_Store/Wishlist-Mobile.png", "./assets/Proyectos/Eco_Store/Cart-Mobile.png"],
+        "description": ["Eco Store es una tienda en línea que promueve el uso de productos ecológicos y sostenibles. Para este proyecto primero realicé el maquetado basandome en un diseño de Figma, utilizando SASS para los estilos, con la extensión scss. El diseño es responsivo, adaptándose a diferentes tamaños de pantalla.", 
+        
+        "El proyecto principalmente tenía una imagen de la ubicación, me pareció que sería una mejor idea que fuera un mapa y no una imagen, así que investigué y con ayuda de GitHub copilot pude integrar Google Maps a esa sección.",
+        
+        "Después ya no quise que esta página fuera estática, que de verdad se pudieran agregar elementos a una lista de deseos y al carrito, también quería seguir poniendo en práctica lo que sé de JavaScript, así que comencé con hacer que las cards se crearan de forma dinámica dependiendo de lo que tenga en un archivo JSON que cree, después con la lista de deseos, le agregué un 'addEventListener' a los iconos de corazón que hay en las cards para que con un condicional se rellenara el ícono al dar click, y que también se guarde el producto en la lista de deseos, para eso se utilizó el almacenamiento en LocalStorage, al dar click se guardan los datos de la card de forma estructurada en un archivo JSON de LocalStorage, es la misma lógica para ver la página de cada producto y agregar productos al carrito, solo que la función de 'agregar al carrito' se activa desde la página del producto, y cada página tiene su lógica para cargar los datos necesarios desde LocalStorage, la página de 'carrito' y 'lista de deseos' tambíen tienen funciones para eliminar cada elemento."],
+        "technologies": ["HTML", "CSS", "SASS", "JavaScript Vanilla"],
+        "repository": "https://github.com/edgarGS25/Eco-Store",
+        "live_demo": "https://edgargs25.github.io/ECO-Store/"
+        }
+    ]
+}
