@@ -363,14 +363,14 @@ main #sobre-mi .tecnologías-container, main #sobre-mi .tools-section .tools-ico
   flex-wrap: wrap;
   gap: 32px;
 }
-main #sobre-mi .tecnologías-container .html, main #sobre-mi .tools-section .tools-icons .html, main #sobre-mi .tecnologías-container .tailwind, main #sobre-mi .tools-section .tools-icons .tailwind, main #sobre-mi .tecnologías-container .sass, main #sobre-mi .tools-section .tools-icons .sass, main #sobre-mi .tecnologías-container .javascript, main #sobre-mi .tools-section .tools-icons .javascript, main #sobre-mi .tecnologías-container .css, main #sobre-mi .tools-section .tools-icons .css {
+main #sobre-mi .tecnologías-container .html, main #sobre-mi .tools-section .tools-icons .html, main #sobre-mi .tecnologías-container .tailwind, main #sobre-mi .tools-section .tools-icons .tailwind, main #sobre-mi .tecnologías-container .sass, main #sobre-mi .tools-section .tools-icons .sass, main #sobre-mi .tecnologías-container .react, main #sobre-mi .tools-section .tools-icons .react, main #sobre-mi .tecnologías-container .javascript, main #sobre-mi .tools-section .tools-icons .javascript, main #sobre-mi .tecnologías-container .css, main #sobre-mi .tools-section .tools-icons .css {
   display: inline-block;
   background-image: url("../assets/icons/html5-01-svgrepo-com.svg");
   background-size: cover;
   width: 100px;
   height: 100px;
 }
-main #sobre-mi .tecnologías-container .html:hover, main #sobre-mi .tools-section .tools-icons .html:hover, main #sobre-mi .tecnologías-container .tailwind:hover, main #sobre-mi .tools-section .tools-icons .tailwind:hover, main #sobre-mi .tecnologías-container .sass:hover, main #sobre-mi .tools-section .tools-icons .sass:hover, main #sobre-mi .tecnologías-container .javascript:hover, main #sobre-mi .tools-section .tools-icons .javascript:hover, main #sobre-mi .tecnologías-container .css:hover, main #sobre-mi .tools-section .tools-icons .css:hover {
+main #sobre-mi .tecnologías-container .html:hover, main #sobre-mi .tools-section .tools-icons .html:hover, main #sobre-mi .tecnologías-container .tailwind:hover, main #sobre-mi .tools-section .tools-icons .tailwind:hover, main #sobre-mi .tecnologías-container .sass:hover, main #sobre-mi .tools-section .tools-icons .sass:hover, main #sobre-mi .tecnologías-container .react:hover, main #sobre-mi .tools-section .tools-icons .react:hover, main #sobre-mi .tecnologías-container .javascript:hover, main #sobre-mi .tools-section .tools-icons .javascript:hover, main #sobre-mi .tecnologías-container .css:hover, main #sobre-mi .tools-section .tools-icons .css:hover {
   animation-name: movimiento;
   animation-duration: 1s;
 }
@@ -379,6 +379,9 @@ main #sobre-mi .tecnologías-container .css, main #sobre-mi .tools-section .tool
 }
 main #sobre-mi .tecnologías-container .javascript, main #sobre-mi .tools-section .tools-icons .javascript {
   background-image: url("../assets/icons/javascript-155-svgrepo-com.svg");
+}
+main #sobre-mi .tecnologías-container .react, main #sobre-mi .tools-section .tools-icons .react {
+  background-image: url("../assets/icons/react-svgrepo-com.svg");
 }
 main #sobre-mi .tecnologías-container .sass, main #sobre-mi .tools-section .tools-icons .sass {
   background-image: url("../assets/icons/sass-svgrepo-com.svg");

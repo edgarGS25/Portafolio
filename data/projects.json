@@ -24,6 +24,26 @@
         "technologies": ["HTML", "CSS", "SASS", "JavaScript Vanilla"],
         "repository": "https://github.com/edgarGS25/Eco-Store",
         "live_demo": "https://edgargs25.github.io/ECO-Store/"
+        },
+        {
+        "id": 3,
+        "name": "Calculadora de propinas",      
+        "image":[
+            "./assets/Proyectos/Calculadora de propinas/Desktop.jpg", 
+            "./assets/Proyectos/Calculadora de propinas/Desktop-2.jpg", 
+            "./assets/Proyectos/Calculadora de propinas/Desktop-3.jpg"
+        ],
+        "imageMobile":[],
+        "description":[
+            "Este es un proyecto de React + TypeScript y Tailwind para los estilos, su principal función es hacer el cálculo del total a pagar de una orden de un restaurante incluyento el porcentaje de propina, los elementos del componente menú se generan extrayendo la información de un array con objetos guardados en un archivo de TypeScript usado como una pequeña base de datos y al mismo tiempo se crea un type para definir el tipo de dato para id, name y price de cada alimento.",
+            
+            "Cree un hook personalizado para crear las funciones para agregar y eliminar un elmento, las cuales exporté al componente principal 'App' para pasar al componente de 'MenuItem'(que es cada elemento del menú) y que se active la función de agregar elemento al darle click a cada elemento, esta función utiliza 'useState' para guardar cada elemento en una arreglo llamado 'order' y cada elemento se guarda como un objeto",
+
+            "Después hice un componente para mostrar los totales con un formulario de typo radio para elegir el porcentaje de propina, en el hook personalizado también se incluye la lógica de los totales, de este hook exporté las funciones para calcular el subtotal, el porcentaje de propina y una que suma el subtotal con la propina a al componente principal para pasarlas por medio de props al componente de totales, cada elemento se renderiza de acuerdo a lo que hay guardado en el state de 'order y cada uno tiene su botón con la función de 'eliminar elemento', también utilicé el hook 'useMemo' de react para el cálculo de los totales cada que hay un cambió en la orden y solo se rendericen cuando sea necesario y cada que se agregue o se quite un elemento."
+        ],
+        "technologies": ["React", "TailwindCSS"],
+        "repository": "https://github.com/edgarGS25/",
+        "live_demo": "https://calculadora-propinasedgs.netlify.app/"  
         }
     ]
 }
