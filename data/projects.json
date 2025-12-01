@@ -42,7 +42,7 @@
             "Después hice un componente para mostrar los totales con un formulario de typo radio para elegir el porcentaje de propina, en el hook personalizado también se incluye la lógica de los totales, de este hook exporté las funciones para calcular el subtotal, el porcentaje de propina y una que suma el subtotal con la propina a al componente principal para pasarlas por medio de props al componente de totales, cada elemento se renderiza de acuerdo a lo que hay guardado en el state de 'order y cada uno tiene su botón con la función de 'eliminar elemento', también utilicé el hook 'useMemo' de react para el cálculo de los totales cada que hay un cambió en la orden y solo se rendericen cuando sea necesario y cada que se agregue o se quite un elemento."
         ],
         "technologies": ["React", "TailwindCSS"],
-        "repository": "https://github.com/edgarGS25/",
+        "repository": "https://github.com/edgarGS25/Calculadora_propinas",
         "live_demo": "https://calculadora-propinasedgs.netlify.app/"  
         }
     ]
